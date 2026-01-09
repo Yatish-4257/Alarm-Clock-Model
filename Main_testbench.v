@@ -22,7 +22,7 @@ module Testbench;
  wire [3:0] S_out0;
 
  
- Aclock uut (
+ Alarm_clock uut (
  .reset(reset), 
  .clk(clk), 
  .H_in1(H_in1), 
