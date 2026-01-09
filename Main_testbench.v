@@ -41,7 +41,10 @@ module Testbench;
  .S_out1(S_out1), 
  .S_out0(S_out0)
  );
-
+ initial begin
+        $dumpfile("test.vcd");
+        $dumpvars(0, Testbench);
+ end
  initial begin 
   clk = 0;
   forever #50000000 clk = ~clk;
